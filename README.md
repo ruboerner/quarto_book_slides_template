@@ -113,3 +113,27 @@ Use a relative link (no leading slash) to avoid broken paths on GitHub Pages:
     - Source: “Deploy from a branch”
 	- Branch: main (or default), Folder: /docs
 3.	Push to main. GitHub Pages will serve your site.
+
+
+## Editing tips in VS Code
+
+If you are working in **VS Code** with the [Quarto extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto), there is an elegant way to add fenced divs:
+
+1. In a `.qmd` file, just type `div` and press <kbd>Tab</kbd>.  
+   The extension inserts a fenced div scaffold:
+
+   ```markdown
+   ::: {.class}
+   Your content here
+   :::
+2. Replace `.class` with the class you actually want, e.g. `.content-visible` or `.content-hidden`:
+
+   ```markdown
+   ::: {.content-visible when-profile="book"}
+   Content shown only in the book.
+   :::
+   ```
+
+👉 Tip: you don’t have to type the full class. Start typing the first letters (e.g. `con`) and VS Code will show you a list of matching completions. You can then pick `.content-visible` or `.content-hidden` from that list.
+
+This snippet saves you from typing all the colons manually and ensures your fences are balanced.
