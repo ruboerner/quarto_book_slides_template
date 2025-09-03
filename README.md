@@ -27,7 +27,7 @@ Slides are a curated subset of the chapter content using Quarto **profiles** and
 ├─ _quarto-slides.yml     # slides profile (revealjs → docs/)
 ├─ index.qmd              # landing page (book only)
 ├─ methods.qmd            # single-source chapter + slides
-├─ slidescks.qmd          # single-source chapter + slides
+├─ slidedecks.qmd         # single-source chapter + slides
 ├─ ...                    # more chapters
 ├─ docs/                  # build output (committed for GH Pages)
 └─ Makefile               # build tasks
