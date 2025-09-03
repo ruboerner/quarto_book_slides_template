@@ -17,6 +17,22 @@ Slides are a curated subset of the chapter content using Quarto **profiles** and
 
 - [Quarto](https://quarto.org) ≥ 1.4  
 - Pandoc (bundled with Quarto)
+- `make`
+
+✅ `make` comes pre-installed:
+
+- Linux: almost every distribution ships GNU Make (`make`) out of the box.
+- macOS: has `make` (actually BSD Make via Xcode Command Line Tools). If you don’t have it yet, run `xcode-select --install`.
+
+⚠️ `make` not included by default:
+
+- Vanilla Windows does not include `make`.
+- You can get it through:
+  - **Git for Windows / Git Bash** (ships with a minimal `make` on some installs)
+  - **MSYS2** (pacman -S make) or **Cygwin**
+  - **Windows Subsystem for Linux (WSL):** install Ubuntu/Debian etc. → `sudo apt install make`
+  - Or use **GNU Make for Windows** [binaries](https://gnuwin32.sourceforge.net/packages/make.htm).
+
 
 ---
 
@@ -72,7 +88,11 @@ make book
 make slides
 ```
 
-**Note:** The Makefile renders the book first (with `--no-clean`) and then the slides so assets and decks are not wiped between steps.
+
+
+**Notes:** The Makefile renders the book first (with `--no-clean`) and then the slides so assets and decks are not wiped between steps.
+
+
 
 ## Embedding slides in a chapter
 Use a relative link (no leading slash) to avoid broken paths on GitHub Pages:
