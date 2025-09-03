@@ -1,0 +1,10 @@
+project:
+  type: website
+  output-dir: docs
+format:
+  revealjs:
+    lib-dir: site_libs
+    slide-number: true
+    hash: true
+    incremental: true
+    mathjax: true

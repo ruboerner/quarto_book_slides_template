@@ -1,0 +1,43 @@
+---
+title: "Methods"
+format:
+  revealjs:
+    output-file: methods_slides.html
+---
+
+# Overview
+
+::: {.content-visible when-profile="book"}
+
+This is the full **book** treatment with expanded explanations, proofs, and references.
+
+:::
+
+::: {.content-visible when-profile="slides"}
+
+This is the **slide** version: concise bullets, figures, and key equations. Everything is fine!
+
+:::
+
+## Section title visible everywhere
+
+
+
+::: {.content-visible when-profile="book"}
+
+Law of cosines:
+
+$$
+c = \sqrt{a^{2} + b^{2} - 2 a b \cos\varphi}
+$$
+
+:::
+
+::: {.content-visible when-profile="slides"}
+
+$$
+c = \sqrt{a^{2} + b^{2} - 2 a b \cos\varphi}
+$$
+
+:::
+

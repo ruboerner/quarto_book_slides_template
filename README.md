@@ -1,4 +1,4 @@
-# Gravimetrie — Quarto Book + RevealJS Slides (single-source)
+# Template — Quarto Book + RevealJS Slides (single-source)
 
 This project publishes a **full online book** and a set of **RevealJS slide decks** from the **same `.qmd` files**.  
 Slides are a curated subset of the chapter content using Quarto **profiles** and **conditional fences**.

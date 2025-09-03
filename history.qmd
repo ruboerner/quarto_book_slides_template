@@ -1,0 +1,13 @@
+---
+title: "History"
+format:
+  revealjs:
+    output-file: history_slides.html
+---
+This appears everywhere, both in book as well as slides.
+
+::: {.content-visible when-profile="slides"}
+
+This appears in the slides only.
+
+:::
