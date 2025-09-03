@@ -98,6 +98,17 @@ You can run it with:
 ```powershell
 make -f Makefile_windows
 ```
+## Note on Makefile configuration
+
+If you use the provided `Makefile`, you need to **manually add the list of `.qmd` files that should also produce slide decks**.
+
+Open the `Makefile` and edit the `CHAPTERS` variable, for example:
+
+```make
+CHAPTERS = methods.qmd theory.qmd numerics.qmd
+```
+
+Each of these files will then render both as a book chapter (`docs/<name>.html`) and as a RevealJS deck (`docs/<name>_slides.html`).
 
 ## Embedding slides in a chapter
 Use a relative link (no leading slash) to avoid broken paths on GitHub Pages:
