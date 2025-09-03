@@ -1,0 +1,23 @@
+SHELL := /usr/bin/env bash
+Q      ?= quarto
+DOCS   ?= docs
+CHAPTERS = methods.qmd history.qmd
+SLIDE_HTMLS = $(patsubst %.qmd,$(DOCS)/%_slides.html,$(CHAPTERS))
+
+.PHONY: all book slides clean
+
+all: book slides
+
+book:
+	mkdir $(DOCS) 2>nul || exit 0
+	$(Q) render --no-clean
+
+slides: $(SLIDE_HTMLS)
+
+$(DOCS)/%_slides.html: %.qmd
+	mkdir $(DOCS) 2>nul || exit 0
+# Render slides with profile 'slides'. Quarto puts output into $(DOCS).
+	$(Q) render --profile slides $< -t revealjs
+
+clean:
+	rm -rf $(DOCS)

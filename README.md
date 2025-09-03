@@ -88,11 +88,16 @@ make book
 make slides
 ```
 
-
-
 **Notes:** The Makefile renders the book first (with `--no-clean`) and then the slides so assets and decks are not wiped between steps.
 
+### Windows users
 
+A modified `Makefile` for Windows (`Makefile_windows`) is included in the repository.
+You can run it with:
+
+```powershell
+make -f Makefile_windows
+```
 
 ## Embedding slides in a chapter
 Use a relative link (no leading slash) to avoid broken paths on GitHub Pages:
