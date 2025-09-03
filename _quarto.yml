@@ -8,8 +8,8 @@ profile:
     - [book, slides]
 
 book:
-  title: "Gravimetrie"
-  author: "Dr. Ralph-Uwe Börner"
+  title: "My Book"
+  author: "Ralph-Uwe Börner"
   chapters:
     - index.qmd
     - history.qmd
@@ -34,4 +34,4 @@ format:
           };
           </script>
 
-editor: visual
+editor: source
